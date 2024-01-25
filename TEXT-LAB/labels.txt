@@ -1,0 +1,3 @@
+0 khong khau trang
+1 deo khau trang
+2 Class 3
