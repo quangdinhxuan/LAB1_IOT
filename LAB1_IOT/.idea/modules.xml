@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/TEXT-LAB.iml" filepath="$PROJECT_DIR$/.idea/TEXT-LAB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LAB1_IOT.iml" filepath="$PROJECT_DIR$/.idea/LAB1_IOT.iml" />
     </modules>
   </component>
 </project>

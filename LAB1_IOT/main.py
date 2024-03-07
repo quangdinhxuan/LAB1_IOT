@@ -1,3 +1,4 @@
+
 import sys
 from Adafruit_IO import MQTTClient
 import time
@@ -5,7 +6,7 @@ import random
 
 AIO_FEED_IDs = ["nutnhan1", "nutnhan2"]
 AIO_USERNAME = "quang1806"
-AIO_KEY = "aio_ZoVr74zpZ3qnO4twyxUqzeR2jm5D"
+AIO_KEY = "aio_yalL24bPQcoOA2OuOSz63vuJokto"
 
 
 def connected(client):
@@ -62,3 +63,5 @@ while True:
 
     time.sleep(1)
     pass
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
