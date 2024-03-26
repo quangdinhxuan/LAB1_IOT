@@ -70,6 +70,6 @@ while True:
         ai_result = image_detector()
         print("AI Output: ", ai_result)
         client.publish("ai", ai_result)
-
+#123
         # readSerial(client)
         time.sleep(1)
