@@ -71,5 +71,5 @@ while True:
         print("AI Output: ", ai_result)
         client.publish("ai", ai_result)
 
-        readSerial(client)
+        # readSerial(client)
         time.sleep(1)
