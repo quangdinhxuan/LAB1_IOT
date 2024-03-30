@@ -3,7 +3,7 @@ from Adafruit_IO import MQTTClient
 import time
 import random
 from simple_ai import *
-from uart import *
+# from uart import *
 
 AIO_FEED_IDs = ["nutnhan4", "nutnhan2"]
 AIO_USERNAME = "quang1806"

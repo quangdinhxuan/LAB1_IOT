@@ -15,6 +15,21 @@ class_names = ["Không khẩu trang", "Có khẩu trang", "Không có người"]
 
 # CAMERA can be 0 or 1 based on default camera of your computer
 camera = cv2.VideoCapture(0)
+video_capture = cv2.VideoCapture(0)
+
+cv2.namedWindow("Window")
+
+while True:
+    ret, frame = video_capture.read()
+    cv2.imshow("Window", frame)
+
+    #This breaks on 'q' key
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+video_capture.release()
+cv2.destroyAllWindows()
+
 
 def image_detector():
     # Grab the webcamera's image.
