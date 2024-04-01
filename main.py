@@ -3,7 +3,7 @@ from Adafruit_IO import MQTTClient
 import time
 import random
 from simple_ai import *
-# from uart import *
+from uart import *
 
 AIO_FEED_IDs = ["nutnhan4", "nutnhan2"]
 AIO_USERNAME = "quang1806"
@@ -45,24 +45,24 @@ while True:
     if counter <= 0:
         counter = 10
 
-        print("Random data is publishing...")
-        if sensor_type == 0:
-            print("Temperature...")
-            temp = random.randint(10, 20)
-            client.publish("cambien1", temp)
-            sensor_type = 1
-
-        elif sensor_type == 1:
-            print("Light...")
-            light = random.randint(100, 500)
-            client.publish("cambien2", light)
-            sensor_type = 2
-
-        elif sensor_type == 2:
-            print("Huminity...")
-            humi = random.randint(50, 70)
-            client.publish("cambien3", humi)
-            sensor_type = 0
+        # print("Random data is publishing...")
+        # if sensor_type == 0:
+        #     print("Temperature...")
+        #     temp = random.randint(10, 20)
+        #     client.publish("cambien1", temp)
+        #     sensor_type = 1
+        #
+        # elif sensor_type == 1:
+        #     print("Light...")
+        #     light = random.randint(100, 500)
+        #     client.publish("cambien2", light)
+        #     sensor_type = 2
+        #
+        # elif sensor_type == 2:
+        #     print("Huminity...")
+        #     humi = random.randint(50, 70)
+        #     client.publish("cambien3", humi)
+        #     sensor_type = 0
 
     counter_ai = counter_ai - 1
     if counter_ai <= 0:
@@ -71,5 +71,5 @@ while True:
         print("AI Output: ", ai_result)
         client.publish("ai", ai_result)
 #123
-        # readSerial(client)
+        readSerial(client)
         time.sleep(1)
